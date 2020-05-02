@@ -1,0 +1,71 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	
+	
+	<definition name="Loginmaster" template="/WEB-INF/jsp/Login.jsp" />
+	<definition name="login" extends="Loginmaster"/>
+	
+	<definition name="Error" template="/WEB-INF/jsp/error/Error.jsp" />
+	<definition name="error" extends="Error" />
+	
+	<definition name="404" template="/WEB-INF/jsp/error/error404.jsp" />
+	<definition name="error404" extends="404" /> 
+	
+		
+		
+		
+		
+	<definition name="masterpages" template="/WEB-INF/jsp/home.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="content" value="" />
+	</definition>
+
+	<definition name="index" extends="masterpages">
+		<put-attribute name="title" value="HOME | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/dashboard.jsp"/>
+	</definition>
+	
+	<definition name="role" extends="masterpages">
+		<put-attribute name="title" value="role | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/role.jsp"/>
+	</definition>
+	
+	<definition name="privilege" extends="masterpages">
+		<put-attribute name="title" value="privilege | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/privilege.jsp"/>
+	</definition>
+	
+	<definition name="pcomponent" extends="masterpages">
+		<put-attribute name="title" value="pcomponent | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/pcomponent.jsp"/>
+	</definition>
+	
+	<definition name="country" extends="masterpages">
+		<put-attribute name="title" value="country | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/country.jsp"/>
+	</definition>
+	
+	<definition name="state" extends="masterpages">
+		<put-attribute name="title" value="state | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/state.jsp"/>
+	</definition>
+	
+	<definition name="userdata" extends="masterpages">
+		<put-attribute name="title" value="state | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/userdata.jsp"/>
+	</definition>
+	
+	<definition name="email" extends="masterpages">
+		<put-attribute name="title" value="state | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/email.jsp"/>
+	</definition>
+	<definition name="invoice" extends="masterpages">
+		<put-attribute name="title" value="invoice | THITA ORGANIZATION" />
+		<put-attribute name="content" value="/WEB-INF/jsp/invoice.jsp"/>
+	</definition>
+	
+	
+
+</tiles-definitions>
