@@ -7,7 +7,7 @@
   -> Download this project or clone.
 <h4> Stap : 2<h4/>
   -> Import this porject in Eclipse
-  -> Update this project ( So ddepende , ncy Download )
+  -> Update this project ( So dependencies are Download automatic )
   -> Download Apachi Tomcate Server ( 8 , 8.5 , 9 .. )
   -> Downlaod Mysql Server for Database
 <h4> Stap : 3<h4/>
